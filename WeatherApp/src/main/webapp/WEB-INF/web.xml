@@ -1,0 +1,28 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+ 
+  <servlet>
+  	<servlet-name>WeatherServlet</servlet-name>
+  	<display-name>WeatherServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.sd133.WeatherServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetWeatherDataServlet</servlet-name>
+  	<display-name>GetWeatherDataServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.sd133.GetWeatherDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>WeatherServlet</servlet-name>
+  	<url-pattern>/WeatherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetWeatherDataServlet</servlet-name>
+  	<url-pattern>/GetWeatherDataServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
